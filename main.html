@@ -8,6 +8,51 @@
 
 <body>
 	<!-- the entire body must be written by student -->
+	<form id="car-singup" method="post">
+		<div>
+		<label for="name">Name</label> <br>
+			<input type="text" id="name" placeholder="Name" required/>
+		</div>
+		<div>
+			<label for="email">Email</label> <br>
+			<input type="email" id="email" placeholder="Email" required/>
+		</div>
+		<div>
+			<lable for="gender_m,gender_f">Gender :</lable>
+			<label for="gender_m"> Male</label> 
+			<input type="radio" id=" gender_m" name="gender" required/>
+			<label for="gender_f">Female</label>
+			<input type="radio" id="gender_f" name="gender" required/>
+		</div>
+		<div>
+			<label for="cars">Car Brands</label>
+			<select name="cars" id="cars" required aria-placeholder="--Please choose an option--">
+				<option value="BMW">BMW</option>
+				<option value="RR">RR</option>
+				<option value="Audi">Audi</option>
+			</select>
+		</div>
+		<div>
+			<label for="age">DOB</label>
+			<input type="date" id="age" placeholder="Age" required/>
+			</div>
+		<div>
+			<lable for="tel">Phone Number</lable>
+			<input type="tel" id="tel" placeholder="xxx-xxx-xxxx"/>
+			</div>
+		<div>
+			<lable for="password">Password</lable>
+			<input type="password" id="password" placeholder="password" required/>
+		</div>
+		<div>
+			<label for="tos">I agree to the TOS</label>
+			<input type="checkbox" id="tos" required/>
+		</div>
+		<div> 
+			<input type="submit" required />
+		</div>
+			
+	</form>
     <script type="text/javascript" src="./script.js">
 </script>
 
